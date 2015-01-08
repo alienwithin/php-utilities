@@ -7,7 +7,8 @@ Role: MD5 Dictionary Based Hash Identifier
 Tested on: Linux (Opensuse Bottle x86_64)
 Run Environment: Command Line
 Applicability: Quick Dirty way of dealing with hashes in an environment with lack of tools like hydra and necessity to find md5 hashes using dictionary attacks.
-Test Run:
+
+Test Run Dictionary used is Cain(http://downloads.skullsecurity.org/passwords/cain.txt.bz2):
 martian@linux-25v9:~/> php crack.php dictionary.txt 2054aa40547bcfb7b8eb9ee1f10055d5
 
 **********Trimmed Led to a 15.8MB file generating the log*****
