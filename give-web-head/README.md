@@ -1,4 +1,4 @@
-# php-utilities
+# Give Web Head
 This Script enables you to find common directories and files on a server fast 
 
 Usage: 
