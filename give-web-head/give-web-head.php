@@ -19,8 +19,8 @@ $scan_type=$_SERVER["argv"][2];
 function http_response($url){
     $resURL = curl_init(); 
     curl_setopt($resURL, CURLOPT_URL, $url); 
-    curl_setopt($ch, CURLOPT_NOBODY, true);
-   	curl_setopt($ch,CURLOPT_USERAGENT,'SpaceZilla/5.0 (SpaceOS; U; SpaceOS NT 5.1; en-US; rv:1.8.1.13) Aliens/20080311 Spacefox/2.0.0.13');
+    curl_setopt($resURL, CURLOPT_NOBODY, true);
+   	curl_setopt($resURL,CURLOPT_USERAGENT,'SpaceZilla/5.0 (SpaceOS; U; SpaceOS NT 5.1; en-US; rv:1.8.1.13) Aliens/20080311 Spacefox/2.0.0.13');
 	curl_setopt ($resURL, CURLOPT_FOLLOWLOCATION, true);
     curl_setopt($resURL, CURLOPT_FAILONERROR, 1); 
     curl_setopt($resURL, CURLOPT_SSL_VERIFYHOST, 0);
