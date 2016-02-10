@@ -15,7 +15,7 @@ echo "##########################################################################
 echo "\nWordPress WP User Frontend Plugin [Unrestricted File Upload] by Alienwithin \n";
 echo "Site: http://munir.skilledsoft.com \n\n";
 echo "Usage: php script_name.php target_host file_to_upload \n\n";
-echo "Example: php " . $argv[0] . " http://target.com deface.txt\n\n ";
+echo "Example: php wp_userfrontend_ufu.php http://target.com deface.txt\n\n ";
 echo "#####################################################################################\n\n";
 	
 $target=$argv[1];
